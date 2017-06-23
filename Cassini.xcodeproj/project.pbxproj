@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		37E4E8EB1EFD6E6200E1EED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E4E8EA1EFD6E6200E1EED0 /* AppDelegate.swift */; };
-		37E4E8ED1EFD6E6200E1EED0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E4E8EC1EFD6E6200E1EED0 /* ViewController.swift */; };
 		37E4E8F01EFD6E6200E1EED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E4E8EE1EFD6E6200E1EED0 /* Main.storyboard */; };
 		37E4E8F21EFD6E6200E1EED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E4E8F11EFD6E6200E1EED0 /* Assets.xcassets */; };
 		37E4E8F51EFD6E6200E1EED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E4E8F31EFD6E6200E1EED0 /* LaunchScreen.storyboard */; };
+		37E4E8FE1EFD6F2800E1EED0 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E4E8FD1EFD6F2800E1EED0 /* ImageViewController.swift */; };
+		37E4E9001EFD72B100E1EED0 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E4E8FF1EFD72B100E1EED0 /* DemoURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37E4E8E71EFD6E6200E1EED0 /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E4E8EA1EFD6E6200E1EED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37E4E8EC1EFD6E6200E1EED0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37E4E8EF1EFD6E6200E1EED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37E4E8F11EFD6E6200E1EED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37E4E8F41EFD6E6200E1EED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37E4E8F61EFD6E6200E1EED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E4E8FD1EFD6F2800E1EED0 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		37E4E8FF1EFD72B100E1EED0 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		37E4E8E91EFD6E6200E1EED0 /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
-				37E4E8EA1EFD6E6200E1EED0 /* AppDelegate.swift */,
-				37E4E8EC1EFD6E6200E1EED0 /* ViewController.swift */,
+				37E4E8FD1EFD6F2800E1EED0 /* ImageViewController.swift */,
+				37E4E8FF1EFD72B100E1EED0 /* DemoURL.swift */,
 				37E4E8EE1EFD6E6200E1EED0 /* Main.storyboard */,
-				37E4E8F11EFD6E6200E1EED0 /* Assets.xcassets */,
-				37E4E8F31EFD6E6200E1EED0 /* LaunchScreen.storyboard */,
 				37E4E8F61EFD6E6200E1EED0 /* Info.plist */,
+				37E4E8FC1EFD6E9100E1EED0 /* Supporting Files */,
 			);
 			path = Cassini;
+			sourceTree = "<group>";
+		};
+		37E4E8FC1EFD6E9100E1EED0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37E4E8EA1EFD6E6200E1EED0 /* AppDelegate.swift */,
+				37E4E8F11EFD6E6200E1EED0 /* Assets.xcassets */,
+				37E4E8F31EFD6E6200E1EED0 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37E4E8ED1EFD6E6200E1EED0 /* ViewController.swift in Sources */,
+				37E4E8FE1EFD6F2800E1EED0 /* ImageViewController.swift in Sources */,
 				37E4E8EB1EFD6E6200E1EED0 /* AppDelegate.swift in Sources */,
+				37E4E9001EFD72B100E1EED0 /* DemoURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
