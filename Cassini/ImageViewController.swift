@@ -10,17 +10,19 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
+    // MARK: Model
     var imageURL: URL? {
         didSet {
             image = nil
-            // check if on screen then fetch it
-            if view.window != nil {
-                fetchImage()
+            if view.window != nil {  // if we're on screen
+                fetchImage()         // then fetch image 
             }
         }
     }
     
-    @IBOutlet weak var scrollView: UIScrollView! {
+    // MARK: Private Implementation
+    
+    @IBOutlet private weak var scrollView: UIScrollView! {
         didSet {
             scrollView.delegate = self
             scrollView.minimumZoomScale = 0.03
@@ -39,10 +41,6 @@ class ImageViewController: UIViewController {
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        imageURL = DemoURL.stanford
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
