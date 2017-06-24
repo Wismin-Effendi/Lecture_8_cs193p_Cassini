@@ -8,9 +8,13 @@
 
 import UIKit
 
-class CassiniViewController: UIViewController {
+class CassiniViewController: UIViewController, UISplitViewControllerDelegate {
 
-
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.splitViewController?.delegate = self
+    }
+    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -22,6 +26,20 @@ class CassiniViewController: UIViewController {
         }
     }
 
+    
+    func splitViewController(_ splitViewController: UISplitViewController,
+                             collapseSecondary secondaryViewController: UIViewController,
+                             onto primaryViewController: UIViewController) -> Bool {
+        if primaryViewController.contents == self {
+            if let imageVC = secondaryViewController.contents as? ImageViewController,
+                imageVC.imageURL == nil {
+                // fake it, say we do it but we do nothing
+                return true
+            }
+        }
+        // tell splitVC to do it, this will do what it suppose to do. i.e. really put `detailVC` on top of `masterVC`.
+        return false
+    }
 }
 
 extension UIViewController {
@@ -36,3 +54,4 @@ extension UIViewController {
         }
     }
 }
+
